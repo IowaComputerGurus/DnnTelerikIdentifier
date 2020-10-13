@@ -30,13 +30,21 @@ namespace IowaComputerGurus.Dnn.TelerikIdentifier.Controllers
             var files = Directory.GetFiles(Server.MapPath("~/bin"), "*.dll", SearchOption.AllDirectories);
             foreach (var file in files)
             {
-                var references = Assembly.LoadFile(file).GetReferencedAssemblies();
-                var foundTelerik =
-                    references.Any(r => r.FullName.StartsWith("Telerik", true, CultureInfo.InvariantCulture));
-                if (!foundTelerik)
-                    continue;
+                try
+                {
+                    var references = Assembly.LoadFile(file).GetReferencedAssemblies();
+                    var foundTelerik =
+                        references.Any(r => r.FullName.StartsWith("Telerik", true, CultureInfo.InvariantCulture));
+                    if (!foundTelerik)
+                        continue;
 
-                foundAssemblies.Add(Path.GetFileName(file));
+                    foundAssemblies.Add(Path.GetFileName(file));
+                }
+                catch (Exception ex)
+                {
+                    model.AssemblyAnalysisErrors.Add(new AssemblyAnalysisError
+                        {AssemblyName = Path.GetFileName(file), ErrorMessage = ex.Message});
+                }
             }
 
             //Filter out the known ones

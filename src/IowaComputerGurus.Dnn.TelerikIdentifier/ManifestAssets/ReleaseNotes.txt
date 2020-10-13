@@ -1,1 +1,2 @@
-﻿<p>Initial release</p>
+﻿<h3>Version 01.00.01</h3>
+<p>Added additional support to handle improperly constructed module assemblies.</p>

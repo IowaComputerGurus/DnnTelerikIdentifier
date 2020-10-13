@@ -23,6 +23,22 @@
         </ul>
     }
 
+    if (Model.AssemblyAnalysisErrors.Count > 0)
+    {
+        <h3>Unexpected Errors Encountered!</h3>
+
+        <div class="dnnFormMessage dnnFormError">
+            During processing we were unable to view the dependencies for the following assemblies.  You will need to manually verify any Telerik dependencies of these items.
+        </div>
+
+        <ul>
+            @foreach (var item in Model.AssemblyAnalysisErrors)
+            {
+                <li>@item.AssemblyName (@item.ErrorMessage)</li>
+            }
+        </ul>
+    }
+
     <div class="dnnFormMessage dnnFormInfo">
         This tool is provided AS-IS and no guarantee is provided, it MIGHT not be able to identify all possible dependencies that could cause issues.
     </div>

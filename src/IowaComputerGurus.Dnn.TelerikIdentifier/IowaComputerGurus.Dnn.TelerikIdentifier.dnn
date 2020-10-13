@@ -1,0 +1,67 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="IowaComputerGurus.Dnn.TelerikIdentifier" type="Module" version="01.00.00">
+      <friendlyName>Telerik Identifier</friendlyName>
+      <description>A module to help identify possible Telerik dependencies</description>
+      <iconFile />
+      <owner>
+        <name>IowaComputerGurus Inc.</name>
+        <organization>IowaComputerGurus Inc.</organization>
+        <url>http://www.iowacomputergurus.com</url>
+        <email>webmaster@iowacomputergurus.com</email>
+      </owner>
+      <license src="ManifestAssets\License.txt"></license>
+      <releaseNotes src="ManifestAssets\ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">09.03.02</dependency>
+      </dependencies>
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/MVC/IowaComputerGurus/TelerikIdentifier</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <component type="Module">
+          <desktopModule>
+            <moduleName>IowaComputerGurus.Dnn.TelerikIdentifier</moduleName>
+            <foldername>IowaComputerGurus/TelerikIdentifier</foldername>
+            <businessControllerClass/>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Telerik Identifier</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>IowaComputerGurus.Dnn.TelerikIdentifier.Controllers/Content/Index.mvc</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl/>
+                    <supportsPopUps>False</supportsPopUps>
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <name>IowaComputerGurus.Dnn.TelerikIdentifier.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

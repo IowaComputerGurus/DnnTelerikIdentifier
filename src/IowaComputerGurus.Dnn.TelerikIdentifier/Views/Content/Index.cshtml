@@ -1,0 +1,35 @@
+﻿@inherits DotNetNuke.Web.Mvc.Framework.DnnWebViewPage<IowaComputerGurus.Dnn.TelerikIdentifier.Models.TelerikAnalysisModel>
+
+@if (Model.AnalysisComplete)
+{
+    <h2>Telerik Dependency Report</h2>
+    if (Model.UnexpectedAssemblies.Count == 0)
+    {
+        <div class="dnnFormMessage dnnFormSuccess">
+            Success!  No unexpected dependencies on Telerik were discovered.  You should have a reasonable expectation of being safe to uninstall Telerik per the 9.8.0 instructions.
+        </div>
+    }
+    else
+    {
+        <div class="dnnFormMessage dnnFormWarning">
+            WARNING! Dependencies on Telerik were discovered in assemblies that will NOT be addressed by un-installing per the instructions with 9.8.0.  The list below includes all.
+        </div>
+
+        <ul>
+            @foreach (var item in Model.UnexpectedAssemblies)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    }
+
+    <div class="dnnFormMessage dnnFormInfo">
+        This tool is provided AS-IS and no guarantee is provided, it MIGHT not be able to identify all possible dependencies that could cause issues.
+    </div>
+}
+else
+{
+    <div class="dnnFormMessage dnnFormError">
+        You must be a host user to see results.
+    </div>
+}

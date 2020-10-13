@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikIdentifier", "IowaComputerGurus.Dnn.TelerikIdentifier\TelerikIdentifier.csproj", "{8356DA12-E259-4E53-A7F5-71821B8B513C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyLocatorTestHarness", "AssemblyLocatorTestHarness\AssemblyLocatorTestHarness.csproj", "{5AF021FD-225A-4223-973C-C986B316242F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8356DA12-E259-4E53-A7F5-71821B8B513C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8356DA12-E259-4E53-A7F5-71821B8B513C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8356DA12-E259-4E53-A7F5-71821B8B513C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8356DA12-E259-4E53-A7F5-71821B8B513C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF021FD-225A-4223-973C-C986B316242F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF021FD-225A-4223-973C-C986B316242F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF021FD-225A-4223-973C-C986B316242F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF021FD-225A-4223-973C-C986B316242F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {374A2EBA-0D28-4DD5-A8E2-747082F67771}
+	EndGlobalSection
+EndGlobal

@@ -32,7 +32,7 @@ namespace IowaComputerGurus.Dnn.TelerikIdentifier.Controllers
             {
                 try
                 {
-                    var references = Assembly.LoadFile(file).GetReferencedAssemblies();
+                    var references = Assembly.Load(System.IO.File.ReadAllBytes(file)).GetReferencedAssemblies();
                     var foundTelerik =
                         references.Any(r => r.FullName.StartsWith("Telerik", true, CultureInfo.InvariantCulture));
                     if (!foundTelerik)

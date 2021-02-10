@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="IowaComputerGurus.Dnn.TelerikIdentifier" type="Module" version="01.00.01">
+    <package name="IowaComputerGurus.Dnn.TelerikIdentifier" type="Module" version="01.00.02">
       <friendlyName>Telerik Identifier</friendlyName>
       <description>A module to help identify possible Telerik dependencies</description>
       <iconFile />

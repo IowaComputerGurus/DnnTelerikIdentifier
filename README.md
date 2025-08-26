@@ -1,3 +1,6 @@
+>[!NOTE]
+> This is no longer supported, the identifier process is included in DNN Platform and automatic for removal in 10.0.0 and later.
+
 # Dnn Telerik Identifier
 This is a free utility that will look at all code currently running on your DNN Platform installation and identify any code that references Telerik.
 
